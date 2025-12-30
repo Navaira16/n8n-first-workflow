@@ -1,0 +1,67 @@
+{
+  "name": "My First workflow",
+  "nodes": [
+    {
+      "parameters": {
+        "content": "## For all the shortcuts \n**Double click** to edit me. [Shortcuts](https://docs.n8n.io/workflows/components/shortcuts/#canvas)"
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -144,
+        -80
+      ],
+      "typeVersion": 1,
+      "id": "80873ce5-5323-4bec-b6bf-9760194993a2",
+      "name": "Sticky Note"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -96,
+        128
+      ],
+      "id": "13604494-5651-41be-b97d-0596507304aa",
+      "name": "My Manual Trigger "
+    },
+    {
+      "parameters": {
+        "sendTo": "barinavaira@gmail.com",
+        "subject": "Hi, from My first workflow",
+        "emailType": "text",
+        "message": "Hey, hi from n8n",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.2,
+      "position": [
+        80,
+        128
+      ],
+      "id": "7d1025b8-bba8-4767-8cdd-2431dc862499",
+      "name": "Send a test email",
+      "webhookId": "142edbae-7e2b-422c-a8d1-ab64b68cbde4",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "m92ZuWLJjjUvxwEo",
+          "name": "Gmail account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {},
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "availableInMCP": false
+  },
+  "versionId": "9c0080bd-07f9-4919-808e-38a2c0fae839",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "204f707147b29c6030509e05b17788aafe42ffe73f61863e56e6d3bc8037a4f4"
+  },
+  "id": "5Gi1Jhtwgnkcv5KP",
+  "tags": []
+}
