@@ -1,3 +1,9 @@
-# n8n First Workflow
+## Workflow File
+- `My First workflow.json`
 
-This repository will contain my n8n automation workflows.
+## How to use
+1. Download the JSON file from this repository
+2. Open n8n
+3. Click Import
+4. Upload the JSON file
+5. Configure credentials if required
